@@ -49,6 +49,7 @@ func AddAndMultiply(n1 int, n2 int) (int, int) {
 }
 
 //Pro adder function in goLang
+//We can input any number of value in this function
 func ProAdder(values ...int) (int, string) {
 	sum := 0
 	for _, value := range values {
