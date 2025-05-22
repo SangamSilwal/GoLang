@@ -10,6 +10,7 @@ func printSlice[T any](items []T) {
 	}
 }
 
+
 //Limiting the type used in the function
 func printLimitedSlice[T int | string](item []T) {
 	for _, value := range item {
@@ -35,6 +36,7 @@ func main() {
 
 	newStack := stack[string]{
 		element: []string{"sangam", "silwal", "is", "my", "name"},
+		
 	}
 	fmt.Println(newStack)
 
