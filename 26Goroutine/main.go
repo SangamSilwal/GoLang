@@ -14,7 +14,7 @@ goroutine are used in golang to sun two or more than two function asychronously
 //using the concept of waitGroup in golang
 
 func runGo(number int, wg *sync.WaitGroup) {
-	wg.Done()
+	defer wg.Done()
 
 	fmt.Println(number)
 }
